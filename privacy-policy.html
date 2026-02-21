@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — GraphQL Tracker</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 0 24px;
+      color: #24292f;
+      line-height: 1.7;
+    }
+    h1 { font-size: 28px; border-bottom: 1px solid #d0d7de; padding-bottom: 12px; }
+    h2 { font-size: 18px; margin-top: 32px; }
+    p, li { font-size: 15px; }
+    ul { padding-left: 20px; }
+    a { color: #0969da; }
+    .updated { color: #57606a; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: February 2025</p>
+
+  <h2>Overview</h2>
+  <p>
+    GraphQL Tracker ("the Extension") is a Chrome/Edge DevTools extension that helps developers
+    inspect GraphQL network requests in real-time. This page explains what data the Extension
+    accesses and how it is handled.
+  </p>
+
+  <h2>Data Collection</h2>
+  <p>The Extension does <strong>not</strong>:</p>
+  <ul>
+    <li>Collect any personal information</li>
+    <li>Transmit any data to external servers</li>
+    <li>Store any data outside of your local browser session</li>
+    <li>Use analytics, tracking, or telemetry of any kind</li>
+  </ul>
+
+  <h2>Data the Extension Accesses</h2>
+  <p>
+    The Extension uses the Chrome DevTools Network API to read GraphQL network requests made
+    by the page you are inspecting. This includes:
+  </p>
+  <ul>
+    <li>GraphQL query and mutation text</li>
+    <li>Request variables and response data</li>
+    <li>HTTP request and response headers</li>
+    <li>Request URLs and HTTP status codes</li>
+  </ul>
+  <p>
+    This data is held <strong>entirely in memory</strong> within the DevTools panel and is
+    cleared automatically when you close DevTools or navigate to a new page (unless
+    "Preserve Log" is enabled). It is never written to disk, synced, or sent anywhere.
+  </p>
+
+  <h2>Permissions</h2>
+  <p>
+    The Extension requests <code>host_permissions: &lt;all_urls&gt;</code> solely because the
+    Chrome DevTools Network API requires it to intercept network traffic on any website the
+    developer chooses to inspect. The Extension does not actively access or modify any web
+    page content.
+  </p>
+
+  <h2>Third-Party Services</h2>
+  <p>The Extension does not use any third-party services, SDKs, or APIs.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>
+    If this policy changes, the updated version will be published at this URL. Continued use
+    of the Extension after changes constitutes acceptance of the revised policy.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    For questions about this privacy policy, please open an issue on the
+    <a href="https://github.com/lpuli19/graphql-tracker-chrome-extension/issues">GitHub repository</a>.
+  </p>
+</body>
+</html>

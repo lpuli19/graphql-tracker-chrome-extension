@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "GraphQL Tracker",
+  "version": "1.0.0",
+  "description": "Track and inspect GraphQL requests in real-time with query, variables, and response data",
+  "devtools_page": "scripts/devtools.html",
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "icons": {
+    "16": "images/icon-graphql.png",
+    "48": "images/icon-graphql.png",
+    "128": "images/icon-graphql.png"
+  }
+}

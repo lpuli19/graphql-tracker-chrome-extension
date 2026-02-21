@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GraphQL Tracker</title>
+  <link rel="stylesheet" href="styles/panel.css">
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1>GraphQL Tracker</h1>
+      <div class="header-actions">
+        <span id="requestCount" class="request-count">0</span>
+        <button id="clearBtn">
+          <svg viewBox="0 0 24 24" width="14" height="14" style="vertical-align: middle; margin-right: 4px;">
+            <path fill="currentColor" d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+          </svg>
+          Clear
+        </button>
+      </div>
+    </div>
+
+    <div id="requestList" class="request-list">
+      <div class="request-controls">
+        <div class="preserve-log-control">
+          <label for="preserveLogCheckbox" class="preserve-log-label">
+            <input type="checkbox" id="preserveLogCheckbox">
+            <span>Preserve Log</span>
+          </label>
+        </div>
+        <div class="search-control">
+          <svg class="search-icon" viewBox="0 0 24 24" width="14" height="14">
+            <path fill="currentColor" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search requests...">
+          <button id="clearSearchBtn" class="clear-search-btn" title="Clear search">✕</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="detailPanel" class="detail-panel">
+      <div id="detailContent">
+        <div class="detail-empty">Select a request to view details</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="lib/json-formatter.min.js"></script>
+  <script src="scripts/panel.js"></script>
+</body>
+</html>
